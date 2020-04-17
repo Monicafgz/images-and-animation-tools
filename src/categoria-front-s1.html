@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+      integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Header
+================================================== -->
+    <header>
+      <div class="top">
+        <div class="top__logo">
+          <a href="index.html"><i class="fab fa-leanpub"></i></a>
+        </div>
+      </div>
+      <div class="showcase">
+        <div class="container">
+          <h1 class="showcase__title">HTML</h1>
+        </div>
+      </div>
+    </header>
+    <!-- / Header
+================================================== -->
+
+    <!--  Main content
+    ================================================== -->
+    <main class="container">
+
+      <!-- Javacript Funcionality  -->
+      <div class='flex-container flex-container--left'>
+        <div id="btn-js" class="btn btn-border">Ocultar vídeos</div>
+      </div>
+      
+
+      <!-- /Javacript Funcionality  -->
+
+      <!-- Article   -->
+      <div class="article">
+        <!--Article block   -->
+
+        <div class="article__block">
+          <p class="article__main-paragraf">
+            HTML, que significa Lenguaje de Marcado de Hipertextos (HyperText Markup Language), es
+            la pieza más básica para la construcción de la web y se usa para definir el sentido y
+            estructura del contenido en una página web. Otras tecnologías además de HTML son usadas
+            generalmente para describir la apariencia/presentación de una página web (CSS) o su
+            funcionalidad (JavaScript).
+          </p>
+        </div>
+
+        <!--/Article block   -->
+
+        <!--Article block   -->
+        <div class="article__block">
+          <h2>Historia del HTML</h2>
+          <p>
+            El lenguaje HTML fue creado en 1991 por Tim Berners-Lee, conocido científico a quien se
+            le considera padre de la World Wide Web. En su momento inicial en el lenguaje HTML se
+            describen una pequeña cantidad de tags o etiquetas que servían para componer documentos.
+            La mayor innovación en ellos era la posiblidad de crear enlaces entre documentos, de
+            modo que se hacía posible la navegación entre páginas.
+          </p>
+          <p>
+            La creación de la organización que regula actualmente los estándares de la web, conocida
+            por W3C (World Wide Web Consortium), no se produjo hasta el año 1996. Ya bajo la tutela
+            del W3C se publicó la versión 3.2 de HTML en enero de 1997. Posteriormente se publicó
+            HTML 4.0 en abril de 1998, que podemos considerar como la primera versión madura del
+            HTML.
+          </p>
+        </div>
+
+        <!--/Article block   -->
+
+        <!--Article block   -->
+
+        <div class="article__block">
+          <h2>Con HTML se expresa el contenido</h2>
+          <p>
+            A la hora de aprender HTML es importante observar que sirve para expresar el contenido
+            (el qué) y nunca la presentación (el cómo). Es decir, con HTML podemos colocar párrafos,
+            listas, secciones, enlaces, imágenes, todo aquello que forma parte del contenido que va
+            a tener una página web.
+          </p>
+          <p>
+            También existen atributos pensados para cambiar la forma como la que esa etiqueta se
+            representa, como el atributo "align", que permite cosas como centrar el texto del
+            contenido de un párrafo, por ejemplo. Sin embargo, aunque existan etiquetas o atributos
+            que sirvan para cambiar el formato o estilo de los elementos, no es una buena idea
+            utilizarlos.
+          </p>
+
+          <figure id='flotante' style='display: block;'>
+            <div class="video-fluid">
+              <iframe
+                class="video-fluid-item"
+                src="https://www.youtube.com/embed/pQN-pnXPaVg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                title="El Laboratorio de Medios del MIT utiliza la innovación para abordar grandes retos de transformación urbana."
+              ></iframe>
+              <a class="sr" href="https://www.youtube.com/embed/pQN-pnXPaVg"
+                >Ver el vídeo en Youtube</a
+              >
+            </div>
+            <figcaption>
+              <cite lang="en"
+                >HTML Full Course from freeCodeCamp.org</cite>
+            </figcaption>
+          </figure>
+        </div>
+
+        <!--/Article block   -->
+
+        <!--Article block   -->
+        <div class="article__block">
+          <h2>Esqueleto de un documento HTML</h2>
+          <p>
+            Un documento HTML, una página web, contiene un árbol de etiquetas, que tiene una
+            organización básica.  La etiqueta raíz de un documento HTML es <code class="code__elem">&lt;html&gt</code> y dentro tiene dos etiquetas principales:
+          </p>
+          <p>
+            Además, hay algunas otras etiquetas básicas de control, como podemos ver en el siguiente
+            esqueleto de documento HTML básico.
+          </p>
+          <p>
+            <pre class="code__block">   
+              <code class="code__block__element">
+&lt;!DOCTYPE html&gt
+&lt;html lang="es"&gt
+&lt;head&gt
+&lt;meta charset="UTF-8"&gt
+&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt
+&lt;title>Título del documento HTML&lt;/title&gt
+&lt;/head&gt
+&lt;body&gt
+&lt;/body&gt
+&lt;/html&gt
+              </code>
+            </pre>  
+          </p>
+        </div>
+
+        <!--/Article block   -->
+      </div>
+      <!-- /Article   -->
+    </main>
+    <!-- / Main content
+================================================== -->
+
+    <!-- Footer
+================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es"
+          ><img
+            src="./images/creative-commons.png"
+            alt="Logo Creative Commons"
+            title="Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)"
+        /></a>
+        <p>
+          Trabajo realizado por Mónica Fernández.<br />Asignatura: Herramientas
+          <abbr title="HyperText Markup Language" lang="en">HTML</abbr> y
+          <abbr title="Cascading Style Sheets" lang="en">CSS </abbr>I
+        </p>
+      </div>
+    </footer>
+    <!-- / Footer
+================================================== -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>

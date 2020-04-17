@@ -1,0 +1,7 @@
+### UOC Boilerplate ###
+.cache
+.cache-loader
+dist
+
+# Dependency directories
+node_modules/
