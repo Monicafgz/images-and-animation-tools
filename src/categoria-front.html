@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Herramientas HTML y CSS</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
       integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
   </head>
   <body>
     <!-- Header
 ================================================== -->
     <header>
-      <div class="top">
-        <div class="top__logo">
-          <a href="index.html"><i class="fab fa-leanpub"></i></a>
-        </div>
+      <div class="top scene_element--slow scene_element--fadein">
+        <a class="top__logo link_element--rotate" href="index.html">
+          <img src="./images/mylogo.svg" alt="Logo de la pagina"
+        /></a>
       </div>
-      <div class="showcase">
+      <div class="showcase showcase--solid">
         <div class="container">
-          <h1 class="showcase__title">
+          <h1 class="showcase__title scene_element scene_element--fadeinright">
             lenguajes <br />
             Front-end
           </h1>
-          <p class="showcase__subtitle">
+          <p class="showcase__subtitle scene_element scene_element--fadeinright">
             Conoce y familiarizate con las herramientas más utilizadas actualmente por
             desarrolladores de los navegadores web.
           </p>
@@ -38,65 +39,108 @@
 
     <!--  Main content
 ================================================== -->
-    <main class="container">
-      <!-- Section: Categorias  -->
+    <main class="container scene_element scene_element--fadeinup">
+      <!-- Section: cards block  -->
 
       <div class="section__block">
         <div class="section flex-container">
           <div class="flex-container__col--40">
-            <a class="btn btn-highligth" href="categoria-front-s1.html"
-              ><abbr title="HyperText Markup Language" lang="en">HTML</abbr></a
-            >
+            <article class="card">
+              <a href="categoria-front-s1.html"
+                ><picture class="card__image">
+                  <source
+                    media="(min-width:1220px)"
+                    srcset="
+                      ./images/coding_480.jpg   480w,
+                      ./images/coding_768.jpg   768w,
+                      ./images/coding_1220.jpg 1220w,
+                      ./images/coding_1440.jpg 1440w
+                    "
+                    sizes="(min-width: 768px) 33.3vw, 100vw"
+                  />
+                  <img
+                    srcset="./images/coding_art_768.jpg 768w, ./images/coding_art_480.jpg 480w"
+                    sizes="(min-width: 768px) 33.3vw, 100vw"
+                    src="./images/coding_1220.jpg"
+                    alt="Image coding"
+                  /> </picture
+              ></a>
+              <div class="card__body">
+                <h2 class="card__title">HTML</h2>
+
+                <p class="card__content">
+                  HTML es el primer lenguaje que debe aprender cualquier persona interesada en
+                  construir un sitio web. A partir del HTML podemos pasar a muchos otros lenguajes
+                  interesantes que sirven para hacer cosas diversas y más avanzadas.
+                </p>
+              </div>
+            </article>
           </div>
           <div class="flex-container__col--40">
-            <p>
-              HTML es el primer lenguaje que debe aprender cualquier persona interesada en construir
-              un sitio web. A partir del HTML podemos pasar a muchos otros lenguajes interesantes
-              que sirven para hacer cosas diversas y más avanzadas.
-            </p>
+            <article class="card">
+              <a href="categoria-front-s1.html"
+                ><picture class="card__image">
+                  <img
+                    srcset="
+                      ./images/laptop_480.jpg   480w,
+                      ./images/laptop_768.jpg   768w,
+                      ./images/laptop_1220.jpg 1220w,
+                      ./images/laptop_1440.jpg 1440w
+                    "
+                    sizes="(min-width: 768px) 33.3vw, 100vw"
+                    src="./images/laptop_768.jpg"
+                    alt="Image laptop"
+                  /> </picture
+              ></a>
+              <div class="card__body">
+                <h2 class="card__title">CSS</h2>
+
+                <p class="card__content">
+                  Build styled, well-structured websites. Learn how to use HTML5 standard to create
+                  websites. Understand CSS syntax, selectors, and units. Learn about code editors
+                  and a browser's Developer Tools.
+                </p>
+              </div>
+            </article>
+
+            <p></p>
           </div>
         </div>
       </div>
-      <!-- /Section: Categorias  -->
-
-      <!-- Section: Categorias  -->
-
-      <div class="section__block">
-        <div class="section flex-container">
-          <div class="flex-container__col--40">
-            <a class="btn btn-highligth" href="#">
-              <abbr title="Cascading Style Sheets" lang="en">CSS </abbr></a
-            >
-          </div>
-          <div class="flex-container__col--40">
-            <p>
-              Build styled, well-structured websites. Learn how to use HTML5 standard to create
-              websites. Understand CSS syntax, selectors, and units. Learn about code editors and a
-              browser's Developer Tools.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- /Section: Categorias  -->
+      <!-- / Section: cards block  -->
     </main>
     <!-- / Main content
 ================================================== -->
 
     <!-- Footer
 ================================================== -->
-    <footer class="footer">
-      <div class="container">
-        <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es"
-          ><img
-            src="./images/creative-commons.png"
-            alt="Logo Creative Commons"
-            title="Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)"
-        /></a>
-        <p>
-          Trabajo realizado por Mónica Fernández.<br />Asignatura: Herramientas
-          <abbr title="HyperText Markup Language" lang="en">HTML</abbr> y
-          <abbr title="Cascading Style Sheets" lang="en">CSS </abbr>I
-        </p>
+    <footer class="footer scene_element scene_element--fadeinup">
+      <div class="inner">
+        <div class="container">
+          <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es"
+            ><img
+              src="./images/creative-commons.png"
+              alt="Logo Creative Commons"
+              title="Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)"
+          /></a>
+          <p>
+            Trabajo realizado por Mónica Fernández.<br />Asignatura: Herramientas
+            <abbr title="HyperText Markup Language" lang="en">HTML</abbr> y
+            <abbr title="Cascading Style Sheets" lang="en">CSS </abbr>I
+          </p>
+          <p>
+            Images by
+            <a
+              href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=731198"
+              >Free-Photos</a
+            >
+            from
+            <a
+              href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=731198"
+              >Pixabay</a
+            >
+          </p>
+        </div>
       </div>
     </footer>
     <!-- / Footer

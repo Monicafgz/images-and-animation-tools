@@ -1,28 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Herramientas HTML y CSS</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
       integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
   </head>
   <body>
     <!-- Header
 ================================================== -->
     <header>
-      <div class="top">
-        <div class="top__logo">
-          <a href="index.html"><i class="fab fa-leanpub"></i></a>
-        </div>
+      <div class="top scene_element--slow scene_element--fadein">
+        <a class="top__logo link_element--rotate" href="index.html">
+          <img src="./images/mylogo.svg" alt="Logo de la pagina"
+        /></a>
       </div>
-      <div class="showcase">
+
+      <div class="showcase showcase--image-1">
         <div class="container">
-          <h1 class="showcase__title">PostCSS</h1>
+          <div class="showcase__box">
+            <h1
+              class="showcase__title showcase__title--inbox scene_element scene_element--fadeinright"
+            >
+              PostCSS
+            </h1>
+          </div>
         </div>
       </div>
     </header>
@@ -31,13 +39,13 @@
 
     <!--  Main content
     ================================================== -->
-    <main class="container">
-      <!-- Javacript Funcionality  -->
+    <main class="container scene_element--slow scene_element--fadein">
+      <!-- Javascript Funcionality  -->
       <div class="flex-container flex-container--left">
         <div id="btn-js" class="btn btn-border">Ocultar vídeos</div>
       </div>
 
-      <!-- /Javacript Funcionality  -->
+      <!-- /Javascript Funcionality  -->
 
       <!-- Article   -->
       <div class="article">
@@ -49,6 +57,21 @@
             plugins pueden soportar variables y mixins, transpilar la futura sintaxis de CSS,
             imágenes en línea y más.
           </p>
+          <figure>
+            <picture>
+              <img
+                srcset="
+                  ./images/startup_480.jpg   480w,
+                  ./images/startup_768.jpg   768w,
+                  ./images/startup_1220.jpg 1220w,
+                  ./images/startup_1440.jpg 1440w
+                "
+                sizes="(min-width: 768px) 80vw, 100vw"
+                src="./images/startup_768.jpg"
+                alt="Image startup"
+              />
+            </picture>
+          </figure>
         </div>
 
         <!--/Article block   -->
@@ -61,6 +84,20 @@
             comenzando a entender qué ofrece, disfrutando el "momento de iluminación" cuando
             descubren como usarlo en sus propios proyectos.
           </p>
+          <figure>
+            <picture>
+              <img
+                srcset="
+                  ./images/work_480.jpg   480w,
+                  ./images/work_768.jpg   768w,
+                  ./images/work_1220.jpg 1220w
+                "
+                sizes="(min-width: 768px) 80vw, 100vw"
+                src="./images/work_768.jpg"
+                alt="Image work"
+              />
+            </picture>
+          </figure>
           <p>
             Autoprefixer, un plugin de PostCSS muy popular, es usado por Google, Shopify, Twitter,
             Bootstrap and Codepen. WordPress también usa Autoprefixer, así como el plugin RTLCSS. Y
@@ -93,7 +130,6 @@
               <iframe
                 class="video-fluid-item"
                 src="https://www.youtube.com/embed/deu8Y4rwsIM"
-                frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
@@ -142,19 +178,33 @@
 
     <!-- Footer
 ================================================== -->
-    <footer class="footer">
-      <div class="container">
-        <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es"
-          ><img
-            src="./images/creative-commons.png"
-            alt="Logo Creative Commons"
-            title="Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)"
-        /></a>
-        <p>
-          Trabajo realizado por Mónica Fernández.<br />Asignatura: Herramientas
-          <abbr title="HyperText Markup Language" lang="en">HTML</abbr> y
-          <abbr title="Cascading Style Sheets" lang="en">CSS </abbr>I
-        </p>
+    <footer class="footer scene_element scene_element--fadeinup">
+      <div class="inner">
+        <div class="container">
+          <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es"
+            ><img
+              src="./images/creative-commons.png"
+              alt="Logo Creative Commons"
+              title="Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)"
+          /></a>
+          <p>
+            Trabajo realizado por Mónica Fernández.<br />Asignatura: Herramientas
+            <abbr title="HyperText Markup Language" lang="en">HTML</abbr> y
+            <abbr title="Cascading Style Sheets" lang="en">CSS </abbr>I
+          </p>
+          <p>
+            Images by
+            <a
+              href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=731198"
+              >Free-Photos</a
+            >
+            from
+            <a
+              href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=731198"
+              >Pixabay</a
+            >
+          </p>
+        </div>
       </div>
     </footer>
     <!-- / Footer

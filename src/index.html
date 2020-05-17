@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Herramientas HTML y CSS</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
@@ -14,16 +15,18 @@
   <body>
     <!-- Header
 ================================================== -->
-    <header>
-      <div class="top">
-        <div class="top__logo">
-          <a href="index.html"><i class="fab fa-leanpub"></i></a>
-        </div>
+    <header class="header">
+      <div class="top scene_element--slow scene_element--fadein">
+        <a class="top__logo link_element--rotate" href="index.html">
+          <img src="./images/mylogo.svg" alt="logo de la pagina"
+        /></a>
       </div>
-      <div class="showcase">
+      <div class="showcase showcase--solid">
         <div class="container">
-          <h1 class="showcase__title">Herramientas <br />HTML y CSS</h1>
-          <p class="showcase__subtitle">
+          <h1 class="showcase__title scene_element scene_element--fadeinright">
+            Herramientas <br />HTML y CSS
+          </h1>
+          <p class="showcase__subtitle scene_element scene_element--fadeinright">
             Conoce y familiarizate con las herramientas más utilizadas actualmente por
             desarrolladores de los navegadores web.
           </p>
@@ -36,17 +39,21 @@
     <!--  Main content
 ================================================== -->
 
-    <main class="container">
+    <main class="container scene_element scene_element--fadeinup">
       <!-- Section: Categorias  -->
 
       <h2>Categorías</h2>
       <div class="section__block">
         <div class="section flex-container">
           <div class="flex-container__col--50">
-            <a class="btn btn-highligth" href="categoria-front.html">Lenguajes Front-end</a>
+            <a class="btn btn-highligth link_element--shrink" href="categoria-front.html"
+              >Lenguajes Front-end</a
+            >
           </div>
           <div class="flex-container__col--50">
-            <a class="btn btn-highligth" href="categoria-pre.html">Preprocesadores</a>
+            <a class="btn btn-highligth link_element--shrink" href="categoria-pre.html"
+              >Preprocesadores</a
+            >
           </div>
         </div>
       </div>
@@ -58,19 +65,33 @@
 
     <!-- Footer
 ================================================== -->
-    <footer class="footer">
-      <div class="container">
-        <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es"
-          ><img
-            src="./images/creative-commons.png"
-            alt="Logo Creative Commons"
-            title="Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)"
-        /></a>
-        <p>
-          Trabajo realizado por Mónica Fernández.<br />Asignatura: Herramientas
-          <abbr title="HyperText Markup Language" lang="en">HTML</abbr> y
-          <abbr title="Cascading Style Sheets" lang="en">CSS </abbr>I
-        </p>
+    <footer class="footer scene_element scene_element--fadeinup">
+      <div class="inner">
+        <div class="container">
+          <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es"
+            ><img
+              src="./images/creative-commons.png"
+              alt="Logo Creative Commons"
+              title="Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)"
+          /></a>
+          <p>
+            Trabajo realizado por Mónica Fernández.<br />Asignatura: Herramientas
+            <abbr title="HyperText Markup Language" lang="en">HTML</abbr> y
+            <abbr title="Cascading Style Sheets" lang="en">CSS </abbr>I
+          </p>
+          <p>
+            Images by
+            <a
+              href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=731198"
+              >Free-Photos</a
+            >
+            from
+            <a
+              href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=731198"
+              >Pixabay</a
+            >
+          </p>
+        </div>
       </div>
     </footer>
     <!-- / Footer

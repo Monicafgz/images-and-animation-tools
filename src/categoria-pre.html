@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Herramientas HTML y CSS</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
       integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
   </head>
   <body>
     <!-- Header
 ================================================== -->
     <header>
-      <div class="top">
-        <div class="top__logo">
-          <a href="index.html"><i class="fab fa-leanpub"></i></a>
-        </div>
+      <div class="top scene_element--slow scene_element--fadein">
+        <a class="top__logo link_element--rotate" href="index.html">
+          <img src="./images/mylogo.svg" alt="Logo de la pagina"
+        /></a>
       </div>
-      <div class="showcase">
+      <div class="showcase showcase--solid">
         <div class="container">
-          <h1 class="showcase__title">Preprocesadores</h1>
-          <p class="showcase__subtitle">
+          <h1 class="showcase__title scene_element scene_element--fadeinright">Preprocesadores</h1>
+          <p class="showcase__subtitle scene_element scene_element--fadeinright">
             Conoce y familiarizate con las herramientas más utilizadas actualmente por
             desarrolladores de los navegadores web.
           </p>
@@ -35,62 +36,105 @@
 
     <!--  Main content
 ================================================== -->
-    <main class="container">
-      <!-- Section: Categorias  -->
+    <main class="container scene_element scene_element--fadeinup">
+      <!-- Section: cards block  -->
 
       <div class="section__block">
         <div class="section flex-container">
           <div class="flex-container__col--40">
-            <a class="btn btn-highligth" href="categoria-pre-s1.html">PostCSS</a>
+            <article class="card">
+              <a href="categoria-pre-s1.html"
+                ><picture class="card__image">
+                  <img
+                    srcset="
+                      ./images/home-office_200.jpg   200w,
+                      ./images/home-office_480.jpg   480w,
+                      ./images/home-office_768.jpg   768w,
+                      ./images/home-office_1220.jpg 1220w,
+                      ./images/home-office_1440.jpg 1440w
+                    "
+                    sizes="(min-width: 768px) 33.3vw, 100vw"
+                    src="./images/home-office_768.jpg"
+                    alt="Image home-office"
+                  /> </picture
+              ></a>
+              <div class="card__body">
+                <h2 class="card__title">PostCSS</h2>
+
+                <p class="card__content">
+                  PostCSS, como se describe en su página oficial, es “una herramienta para
+                  transformar CSS con plugins de Javascript”. PostCSS es una herramienta que por sí
+                  sola no realiza una acción, pues es hasta que utilizamos los plugins que
+                  verdaderamente podemos ver la magia de PostCSS.
+                </p>
+              </div>
+            </article>
           </div>
           <div class="flex-container__col--40">
-            <p>
-              PostCSS, como se describe en su página oficial, es “una herramienta para transformar
-              CSS con plugins de Javascript”. PostCSS es una herramienta que por sí sola no realiza
-              una acción, pues es hasta que utilizamos los plugins que verdaderamente podemos ver la
-              magia de PostCSS.
-            </p>
+            <article class="card">
+              <a href="categoria-pre-s1.html"
+                ><picture class="card__image">
+                  <img
+                    srcset="
+                      ./images/startup_480.jpg   480w,
+                      ./images/startup_768.jpg   768w,
+                      ./images/startup_1220.jpg 1220w,
+                      ./images/startup_1440.jpg 1440w
+                    "
+                    sizes="(min-width: 768px) 33.3vw, 100vw"
+                    src="./images/startup_768.jpg"
+                    alt="Image startup"
+                  /> </picture
+              ></a>
+              <div class="card__body">
+                <h2 class="card__title">Babel</h2>
+
+                <p class="card__content">
+                  Babel es una herramienta que nos permite transformar nuestro código JS de última
+                  generación (o con funcionalidades extras) a JS que cualquier navegador o versión
+                  de Node.js entienda.
+                </p>
+              </div>
+            </article>
+
+            <p></p>
           </div>
         </div>
       </div>
-      <!-- /Section: Categorias  -->
-
-      <!-- Section: Categorias  -->
-
-      <div class="section__block">
-        <div class="section flex-container">
-          <div class="flex-container__col--40">
-            <a class="btn btn-highligth" href="categoria-pre-s1.html">BABEL</a>
-          </div>
-          <div class="flex-container__col--40">
-            <p>
-              Babel es una herramienta que nos permite transformar nuestro código JS de última
-              generación (o con funcionalidades extras) a JS que cualquier navegador o versión de
-              Node.js entienda.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- /Section: Categorias  -->
+      <!-- /Section: cards block  -->
     </main>
     <!-- / Main content
 ================================================== -->
 
     <!-- Footer
 ================================================== -->
-    <footer class="footer">
-      <div class="container">
-        <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es"
-          ><img
-            src="./images/creative-commons.png"
-            alt="Logo Creative Commons"
-            title="Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)"
-        /></a>
-        <p>
-          Trabajo realizado por Mónica Fernández.<br />Asignatura: Herramientas
-          <abbr title="HyperText Markup Language" lang="en">HTML</abbr> y
-          <abbr title="Cascading Style Sheets" lang="en">CSS </abbr>I
-        </p>
+    <footer class="footer scene_element scene_element--fadeinup">
+      <div class="inner">
+        <div class="container">
+          <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.es"
+            ><img
+              src="./images/creative-commons.png"
+              alt="Logo Creative Commons"
+              title="Atribución-NoComercial 4.0 Internacional (CC BY-NC 4.0)"
+          /></a>
+          <p>
+            Trabajo realizado por Mónica Fernández.<br />Asignatura: Herramientas
+            <abbr title="HyperText Markup Language" lang="en">HTML</abbr> y
+            <abbr title="Cascading Style Sheets" lang="en">CSS </abbr>I
+          </p>
+          <p>
+            Images by
+            <a
+              href="https://pixabay.com/photos/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=731198"
+              >Free-Photos</a
+            >
+            from
+            <a
+              href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=731198"
+              >Pixabay</a
+            >
+          </p>
+        </div>
       </div>
     </footer>
     <!-- / Footer
