@@ -27,7 +27,7 @@
   #SETTINGS
 \*------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Roboto&display=swap'); */
 
 /* Variables */
 :root {
@@ -56,7 +56,7 @@ html {
 \*------------------------------------*/
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: /*'Roboto',*/ sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.8;
@@ -74,7 +74,7 @@ h2,
 h3,
 h4 {
   margin: 0 0 1.5rem;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: /*'Noto Sans JP',*/ sans-serif;
   font-weight: 600;
   line-height: 1.5;
   color: var(--primary-color);
@@ -621,9 +621,4 @@ pre {
 .link_element--rotate:hover {
   transform: rotate(45deg);
   transition: transform 0.5s;
-}
-
-#MyRect {
-  fill: red;
-  stroke: black;
 }
